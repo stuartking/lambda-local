@@ -42,10 +42,6 @@
 	} else {
 		timeoutMs = 3000;
 	}
-	setTimeout(function(){
-		console.log("Task timed out after "+(timeoutMs/1000).toFixed(2)+" seconds");
-		process.exit();
-	}, timeoutMs); 
 
 	_context._initialize({
 		functionName: lambdaHandler,
